@@ -4,9 +4,11 @@
 .container
     margin: 10px
 
-#main-row
-
-#left-menu, #content
+#lang-links
+    font-family: "Avenir"   
+    font-size: 10pt     
+    color: #9B999F
+    text-align: right
 
 #main-menu-container
     #quote
@@ -64,6 +66,7 @@
         font-family: "Cooper Std"   
         font-style: italic
         font-size: 21pt 
+        color: #B2B2B2
 
     #menu-bottom
         height: 150px
@@ -73,6 +76,9 @@
         font-style: italic
         font-size: 12pt 
         color: #4FA9C6        
+
+        span#coneixer-link
+            text-decoration: underline
 
 #content-container
     padding: 10px
@@ -90,3 +96,35 @@
 
     span.value    
         margin-left: 5px
+
+#bottom-quote    
+    #bottom-quote-container   
+        // overflow-x: hidden
+        font-family: "Astronaut"
+        font-size: 20pt
+        color: black
+        text-align: center
+        width: 600px
+        height: 40px
+        // overflow: hidden
+        margin: 0 40%
+
+        position: relative
+        overflow: hidden
+        white-space: nowrap
+        background-color: #fff
+
+    #bottom-quote-container::after
+        content: ""
+        pointer-events: none
+        position: absolute
+        width: 100px
+        height: 100%
+        top: 0
+        right: 0
+        
+        background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+        background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+        background-image: -ms-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+        background-image: -o-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
