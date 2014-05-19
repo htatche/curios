@@ -11,7 +11,7 @@ html
       
   body
     .container
-        .row
+        .row#main-row
             .col-sm-12.col-md-3
                 .row
                     .col-xs-5.col-sm-3.col-md-12
@@ -42,7 +42,7 @@ html
                                 img(src="../files/images/twitter-32.png")   
                                 img(src="../files/images/linkedin-32.png")                        
 
-            .col-sm-12.col-md-3.nopadding
+            .col-sm-12.col-md-3.nopadding#left-menu
                 #left-menu-container
                     h3 negoci
                     ul.list-unstyled
@@ -61,13 +61,23 @@ html
                     h3 producte
                     ul.list-unstyled
                         li noeTVeig
-        
-            .col-sm-12.col-md-6.nopadding
-                #content      
-                    .client
-                        | Client: Tactum perruquers Any: 2013
-                    .briefing
-                        | Briefing: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                    .solucio
-                        | Solucio: Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, elementumifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+
+                    #menu-bottom
+                        | Vols veure en què estem
+                        | treballant actualment? 
+                        | Coneix els nostres
+                        | projectes en curs                        
+                        
+            .col-sm-12.col-md-6.nopadding#content-container      
+                .client
+                    span.key Client:
+                    span.value Tactum perruquers 
+                    span.key Any:
+                    span.value 2013
+                .briefing
+                    span.key Briefing:
+                    span.value Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                .key.solucio
+                    span.key Solucio:
+                    span.value Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, elementumifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
 
